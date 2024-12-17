@@ -1,7 +1,7 @@
 # ALKDRec
 This repository contains the source code for **Active Large Language Model-based Knowledge Distillation for Session-based Recommendation (ALKDRec)**. 
 
-If you would like to review the full paper with its appendix, please refer to `full_paper_with_appendix.pdf` included in this repository.
+If you would like to review the full paper with its appendix, please refer to [**full_paper_with_appendix.pdf**](full_paper_with_appendix.pdf) included in this repository.
 
 ---
 
