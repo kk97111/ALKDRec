@@ -13,6 +13,13 @@ To run the **ALKDRec** model with different backbones, use the following Jupyter
 - **Atten-Mixer backbone**: `distillation-Atten-Mixer.ipynb`
 
 > **Note**: Cell 1 in each notebook includes options for the dataset and ablation studies.
+>
+> **Ablation Study**: To assess the effectiveness of ALKDRec's module design, we compare it with several variants:
+>
+> - **(1) TR**: Distills knowledge from the **T**eacher **R**ecommender by mimicking its predictions, which fine-tunes the well-trained student recommender for KD.
+> - **(2) random**: Distills knowledge from LLM by randomly sampling a subset of instances.
+> - **(3) hardest/easiest**: Distills knowledge from LLM for the hardest/easiest instances based on their difficulties.
+> - **(4) RAD-BC**: Replaces our active learning strategy in ALKDRec with the **r**obust **a**ctive **d**istillation on **b**inary **c**lassification tasks \cite{baykalrobust}, which models only correct and incorrect instances. The number of correct instances in RAD-BC is set to match the total number of effective/similar instances in ALKDRec.
 
 ---
 
@@ -36,6 +43,7 @@ Leverage the large language model (LLM) to summarize the teacher's predictions a
 Perform active learning to refine the knowledge distillation process:
 - `active learning-Games.ipynb` 
 - `active learning-ML.ipynb`
+### NOTICE
+**The outputs from all the above steps are already included in this package for your convenience.**
+
 ---
-## NOTICE
-The outputs from all the above steps are already included in this package for your convenience.
