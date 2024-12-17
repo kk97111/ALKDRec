@@ -19,7 +19,7 @@ To run the **ALKDRec** model with different backbones, use the following Jupyter
 > - **(1) TR**: Distills knowledge from the **T**eacher **R**ecommender by mimicking its predictions, which fine-tunes the well-trained student recommender for KD.
 > - **(2) random**: Distills knowledge from LLM by randomly sampling a subset of instances.
 > - **(3) hardest/easiest**: Distills knowledge from LLM for the hardest/easiest instances based on their difficulties.
-> - **(4) RAD-BC**: Replaces our active learning strategy in ALKDRec with the **r**obust **a**ctive **d**istillation on **b**inary **c**lassification tasks \cite{baykalrobust}, which models only correct and incorrect instances. The number of correct instances in RAD-BC is set to match the total number of effective/similar instances in ALKDRec.
+> - **(4) RAD-BC**: Replaces our active learning strategy in ALKDRec with the **r**obust **a**ctive **d**istillation on **b**inary **c**lassification tasks, which models only correct and incorrect instances. The number of correct instances in RAD-BC is set to match the total number of effective/similar instances in ALKDRec.
 
 ---
 
